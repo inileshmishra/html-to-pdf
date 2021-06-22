@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
+import { UserFormComponent } from './user-form/user-form.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PDFExportModule
   ],
   providers: [],
   bootstrap: [AppComponent]
